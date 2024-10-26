@@ -84,27 +84,25 @@
 </section>
 
 <section id="contact" class="section">
-<form id="contactForm">
-    <h3>Contact Me</h3>
-    <br><br>
-    <div class="form-div">
-        <label>Your Name</label>
-        <br>
-        <input type="text" placeholder="Your name" id="name" required>
-    </div>
-    <div class="form-div">
-        <label>Your Email</label>
-        <br>
-        <input type="email" placeholder="Your email" id="email" required>
-    </div>
-    <div class="form-div">
-        <label>Your Message</label>
-        <br>
-        <input type="text" placeholder="Your Message" id="message" required>
-    </div>
-    <div class="form-div">
-        <button type="submit" class="btn">Submit</button>
-    </div>
+<form id="form">
+  <div class="field">
+    <label for="from_name">from_name</label>
+    <input type="text" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="to_name">to_name</label>
+    <input type="text" name="to_name" id="to_name">
+  </div>
+  <div class="field">
+    <label for="message">message</label>
+    <input type="text" name="message" id="message">
+  </div>
+  <div class="field">
+    <label for="reply_to">reply_to</label>
+    <input type="text" name="reply_to" id="reply_to">
+  </div>
+
+  <input type="submit" id="button" value="Send Email" >
 </form>
 </section>
 
@@ -116,37 +114,11 @@
     </ul>
 </footer>
 
-<script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Thank you! I'll get in touch soon.");
-        document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("EiSgeFwz0o01t4Ju4"); // Replace with your EmailJS user ID
-});
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Define the parameters for EmailJS
-    const templateParams = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
-
-    // Send email using EmailJS
-    emailjs.send("service_q9si0jp", "template_yv4s95l", templateParams)
-        .then(function(response) {
-            alert("Email sent successfully!");
-            document.getElementById("contactForm").reset(); // Reset the form on success
-        })
-        .catch(function(error) {
-            alert("Failed to send email: " + error.text);
-        });
-});
-
-    });
+<script type="text/javascript">
+  emailjs.init('EiSgeFwz0o01t4Ju4')
 </script>
-
 </body>
 </html>
