@@ -86,3 +86,13 @@ form .btn:hover {
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width: 480px) {
+    .form-div input, .form-div .btn {
+        width: 100%; /* Full width for small screens */
+        max-width: 100%;
+    }
+
+    #contactForm {
+        padding: 10px;
+    }
+}
