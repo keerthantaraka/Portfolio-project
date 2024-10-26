@@ -6,213 +6,116 @@
     <title>Keerthan Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
- <!-- <script  src="index.js"> </script>  -->
-   
-  
 </head>
-
-
 <body>
     
- <nav>
+<nav>
     <a href="#" class="logo"><span>KEERTHAN</span></a>
     <ul class="links">
-       <a href="#home"> Home </a>
-       <a href="#about"> About</a>
-       <a href="#projects"> Projects</a>
-       <a href="#contact"> Contact</a>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#projects">Projects</a></li>
+       <li><a href="#contact">Contact</a></li>
     </ul>
     <span class="bi bi-list" id="menu"></span>
     <a href="#contact" class="btn">Contact Me</a>
- </nav>
-<div id="home">
-    <br><br>
- <section class="home" >
-    <img src="keerthan.jpeg">
+</nav>
+
+<div id="home" class="section home">
+    <img src="keerthan.jpeg" alt="Keerthan Taraka">
     <div class="infobox">
-        <h1><span>Hi , iam Keerthan Taraka</span></h1>
-        <!-- <h3>Web Develpor</h3> -->
-        <p>Self-motivated and hardworking freshmen seeking an opportunity to work in a challenging environment to
-            prove my skills and utilise my knowledge & intelligence in the growth of the organisation.
-        </p>
+        <h1>Hi, I'm Keerthan Taraka</h1>
+        <p>Self-motivated and hardworking freshman seeking an opportunity to work in a challenging environment to prove my skills and utilize my knowledge for the organization's growth.</p>
     </div>
-
     <div class="btn-box">
-      
-        <a class="btn" href="#contact" >Contact Me</a>
+        <a class="btn" href="#contact">Contact Me</a>
     </div>
- </section>
 </div>
-         
-            <section id="about">
-                <br><br>
-            <div class="about-box">
-               <div class="about-info">
-                <h3 >About Me</h3>
-                <br>
-                <p>Self-motivated and hardworking freshmen seeking an opportunity to work in a challenging environment to
-                    prove my skills and utilise my knowledge & intelligence in the growth of the organisation.
-                    </p>
 
-                 
-               </div>
-               <br>
-               <br>
-                 
-               <div class="skills">
-                
-                <ul>
-                   
-                    <p class="sub-title">Technical Skills</hp>
-                    <li><span class="bi bi-chevron-right"></span> Python</li>
-                    <li><span class="bi bi-chevron-right"></span> SQL</li>
-                    <li><span class="bi bi-chevron-right"></span> Java </li>
-                    <li><span class="bi bi-chevron-right"></span> Html / Css</li>
-                    <li><span class="bi bi-chevron-right"></span> Dbms</li>
-                    <li><span class="bi bi-chevron-right"></span> Power BI</li>
-                    <li><span class="bi bi-chevron-right"></span> Excel</li>
-                    
+<section id="about" class="section">
+    <div class="about-box">
+        <h3>About Me</h3>
+        <p>Self-motivated and hardworking freshman seeking an opportunity to work in a challenging environment to prove my skills and utilize my knowledge for the organization's growth.</p>
+        <div class="skills">
+            <ul>
+                <p class="sub-title">Technical Skills</p>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>DBMS</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+            </ul>
+            <ul>
+                <p class="sub-title">Soft Skills</p>
+                <li>Collaborative & Teamwork</li>
+                <li>Quick Learner</li>
+                <li>Effective Communication Skills</li>
+                <li>Analytical Thinking</li>
+                <li>Problem Solving</li>
+                <li>Flexibility & Adaptability</li>
+                <li>Critical Thinking</li>
+            </ul>
+        </div>
+    </div>
+    <img src="keerthan.jpeg" width="400" height="400" alt="Keerthan Taraka">
+</section>
 
-                </ul>
+<section id="projects" class="section">
+    <h3 class="header">Projects</h3>
+    <div class="project-box">
+        <div class="box">
+            <h4>Algorithm Sorting Visualizer</h4>
+            <p><strong>Tech Stack:</strong> Python TKinter</p>
+            <p>Algorithm visualization demonstrates the operation of logic in a pictorial manner, enhancing understanding and knowledge.</p>
+        </div>
+        <div class="box">
+            <h4>Steganography</h4>
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <p>Steganography hides information in digital media to be accessible only to the intended recipient.</p>
+        </div>
+        <div class="box">
+            <h4>Stress Detection in Social Network</h4>
+            <p><strong>Tech Stack:</strong> Java/J2EE (JSP, Servlet), MySQL</p>
+            <p>Uses text analysis to detect stress levels based on social network interactions.</p>
+        </div>
+    </div>
+</section>
 
-                
-                <ul>
-                    <p class="sub-title">Soft Skills</p>
-                    <li><span class="bi bi-chevron-right"></span> Collaborative & Team work</li>
-                    <li><span class="bi bi-chevron-right"></span> Quick learner</li>
-                    <li><span class="bi bi-chevron-right"></span> Effective Communication Skills </li>
-                    <li><span class="bi bi-chevron-right"></span> Analytical thinking</li>
-                    <li><span class="bi bi-chevron-right"></span> Problem Solving</li>
-                    <li><span class="bi bi-chevron-right"></span> Flexibility & Adaptability</li>
-                    <li><span class="bi bi-chevron-right"></span> Critical Thinking    </li>
+<section id="contact" class="section">
+    <form id="contactForm">
+        <h3>Contact Me</h3>
+        <div class="form-div">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Your name" id="name" required>
+        </div>
+        <div class="form-div">
+            <label for="email">Your Email</label>
+            <input type="email" placeholder="Your email" id="email" required>
+        </div>
+        <div class="form-div">
+            <label for="message">Your Message</label>
+            <textarea placeholder="Your message" id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</section>
 
-                </ul>
-                
-                
-              
-                
-               
-                
-               
+<footer>
+    <ul>
+        <li><span class="bi bi-envelope"></span> Keerthantaraka7707@gmail.com</li>
+        <li><span class="bi bi-phone"></span> 9491287707</li>
+        <li><span class="bi bi-linkedin"></span> <a href="https://www.linkedin.com/in/keerthan-taraka-4887851a8/">LinkedIn Profile</a></li>
+    </ul>
+</footer>
 
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Thank you! I'll get in touch soon.");
+    });
+</script>
 
-               </div>
-            </div>
-
-            <img src="keerthan.jpeg " width="400px" height="400px">
-            </section>
-            <div id="projects">
-                <br>
-                <br>
-            <section id="project">
-                <br>
-                <br>
-                  <h1 class="header">Projects</h1>
-                  <br>
-                  <br>
-                  <div class="project-box">
-                    
-                    <div class="box">
-                        <h3>Algorithm Sorting Visualizer</h3>
-                        <br>
-                        <p> Tech Stack:  Python TKinter</p>
-                        <p class="bi bi-dot">
-                       Algorithm visualisation demonstrates the operation of logic in a pictorial manner.
-                      
-                        </p>
-                        <p class="bi bi-dot"> This enhances knowledge and simplifies understanding.</p>
-                    </div>
-
-
-                    <div class="box">
-                        <h3>Steganography</h3>
-                        <br>
-                       <p>Tech Stack: HTML, CSS, JavaScript.</p>
-                       <p class="bi bi-dot">Steganography is the art of hidden writing. It is a technique for hiding information in digital media so that
-                        only the intended recipient knows it exists.</p>
-                        <p class="bi bi-dot">Steganography is similar to cryptography, and both have been used throughout history to protect
-                            information.</p>
-                    </div>
-
-
-                    <div class="box">
-                        <h3>Detecting Stress Based on Social Interactions in Social Network</h3>
-                        <br>
-                        <p>Tech Stack: Java/J2EE (JSP, Servlet), MySQL</p>
-                        <p class="bi bi-dot"> This web application uses the texts or tweets we post to determine how stressed we are.</p>
-                        <p class="bi bi-dot"> A factor graph model is a graph that assigns a text rating of -5 to +5 based on the texts themselves. This
-                            online tool determines our emotional state, identifying us as normal, happy, sad, or angry.
-                            
-                        </p>
-                    </div>
-                  </div>
-            </section>
-</div>
-            <section id="contact">
-                
-                <form>
-                    <h3>Contact Me</h3>
-                    <br><br>
-                 <div class="form-div">
-                    <label>Your Name</label>
-                    <br>
-                    <input type="text" placeholder="your name" id="name">
-
-                 </div>
-
-                 <div class="form-div">
-                    <label>Your Email</label>
-                    <br>
-                  <input type="email" placeholder="your email" id="email">
-
-                 </div>
-                 <div class="form-div">
-                    <label>Your Message</label>
-                    <br>
-                  <input type="text" placeholder="your Message">
-
-                 </div>
-
-                 <div class="form-div">
-                    <button type="submit" class="btn" onclick="submit12()" >Submit</button>
-                 </div>
-                </form>
-                
-            </section>
-            
-            <footer>
-               <ul>
-                <li><span class="bi bi-envelope"></span> &nbsp;Keerthantaraka7707@gmail.com</li> 
-                <li><span class="bi bi-phone"></span> &nbsp;9491287707</li>
-                <li><span class="bi bi-linkedin"></span>&nbsp;<a href="https://www.linkedin.com/in/keerthan-taraka-4887851a8/">https://www.linkedin.com/in/keerthan-taraka-4887851a8/</a></li>
-               </ul>
-            </footer>
-            <script>
-               
-     function submit12(){
-      alert("Hi will get in touch")
-
-// Load the EmailJS library
-document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("EiSgeFwz0o01t4Ju4"); // Replace with your EmailJS user ID
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    emailjs.sendForm("service_q9si0jp", "template_yv4s95l", this)
-    .then(
-        function(response) {
-            alert("Email sent successfully!");
-        },
-        function(error) {
-            alert("Failed to send email: " + error.text);
-        }
-    );
-});
-
-     }
-   
-            </script>
 </body>
 </html>
