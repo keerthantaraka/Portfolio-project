@@ -191,6 +191,26 @@
                
      function submit12(){
       alert("Hi will get in touch")
+
+// Load the EmailJS library
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("EiSgeFwz0o01t4Ju4"); // Replace with your EmailJS user ID
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    emailjs.sendForm("service_q9si0jp", "template_yv4s95l", this)
+    .then(
+        function(response) {
+            alert("Email sent successfully!");
+        },
+        function(error) {
+            alert("Failed to send email: " + error.text);
+        }
+    );
+});
+
      }
    
             </script>
