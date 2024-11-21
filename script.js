@@ -1,21 +1,20 @@
-const btn = document.getElementById("button")
+const btn = document.getElementById("button");
 
 document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault()
+  event.preventDefault();
 
-  btn.value = "Sending..."
+  btn.innerText = "Sending...";
 
-  const serviceID = "default_service"
-  const templateID = "template_yv4s95l"
+  const serviceID = "default_service";
+  const templateID = "template_yv4s95l";
 
-  emailjs.sendForm(serviceID, templateID, this).then(
-    () => {
-      btn.value = "Send Email"
-      alert("Sent!")
-    },
-    (err) => {
-      btn.value = "Send Email"
-      alert(JSON.stringify(err))
-    },
-  )
-})
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.innerText = "Send Email";
+      alert("Message sent successfully!");
+    })
+    .catch((err) => {
+      btn.innerText = "Send Email";
+      alert("Failed to send message. Please try again.");
+    });
+});
