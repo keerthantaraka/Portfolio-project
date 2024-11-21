@@ -10,7 +10,7 @@
 <body>
     
 <nav>
-    <a href="#" class="logo"><span>KEERTHAN</span></a>
+    <a href="#" class="logo">KEERTHAN</a>
     <ul class="links">
        <li><a href="#home">Home</a></li>
        <li><a href="#about">About</a></li>
@@ -21,104 +21,97 @@
     <a href="#contact" class="btn">Contact Me</a>
 </nav>
 
-<div id="home" class="section home">
-    <img src="keerthan.jpeg" alt="Keerthan Taraka">
+<header id="home" class="section home">
+    <img src="keerthan.jpeg" alt="Keerthan Taraka" class="profile-pic">
     <div class="infobox">
-        <h1>Hi, I'm Keerthan Taraka</h1>
-        <p>Self-motivated and hardworking freshman seeking an opportunity to work in a challenging environment to prove my skills and utilize my knowledge for the organization's growth.</p>
-    </div>
-    <div class="btn-box">
+        <h1>Hi, I'm <span>Keerthan Taraka</span></h1>
+        <p>A self-motivated and hardworking freshman eager to contribute to challenging projects while enhancing my skills for organizational growth.</p>
         <a class="btn" href="#contact">Contact Me</a>
     </div>
-</div>
+</header>
 
 <section id="about" class="section">
-    <div class="about-box">
-        <h3>About Me</h3>
-        <p>Self-motivated and hardworking freshman seeking an opportunity to work in a challenging environment to prove my skills and utilize my knowledge for the organization's growth.</p>
+    <h3 class="section-title">About Me</h3>
+    <div class="about-content">
+        <p>I am a dedicated individual seeking opportunities to prove my technical and analytical abilities. Below are some of my key skills:</p>
         <div class="skills">
-            <ul>
-                <p class="sub-title">Technical Skills</p>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-                <li>DBMS</li>
-                <li>Power BI</li>
-                <li>Excel</li>
-            </ul>
-            <ul>
-                <p class="sub-title">Soft Skills</p>
-                <li>Collaborative & Teamwork</li>
-                <li>Quick Learner</li>
-                <li>Effective Communication Skills</li>
-                <li>Analytical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Flexibility & Adaptability</li>
-                <li>Critical Thinking</li>
-            </ul>
+            <div class="skill-group">
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                    <li>DBMS</li>
+                    <li>Power BI</li>
+                    <li>Excel</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Team Collaboration</li>
+                    <li>Quick Learning</li>
+                    <li>Effective Communication</li>
+                    <li>Analytical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Adaptability</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <img src="keerthan.jpeg" width="400" height="400" alt="Keerthan Taraka">
 </section>
 
 <section id="projects" class="section">
-    <h3 class="header">Projects</h3>
+    <h3 class="section-title">Projects</h3>
     <div class="project-box">
         <div class="box">
             <h4>Algorithm Sorting Visualizer</h4>
             <p><strong>Tech Stack:</strong> Python TKinter</p>
-            <p>Algorithm visualization demonstrates the operation of logic in a pictorial manner, enhancing understanding and knowledge.</p>
+            <p>Visualizes algorithm operations, enhancing comprehension of logical processes.</p>
         </div>
         <div class="box">
             <h4>Steganography</h4>
             <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-            <p>Steganography hides information in digital media to be accessible only to the intended recipient.</p>
+            <p>Hides data within media files, ensuring secure information transfer.</p>
         </div>
         <div class="box">
             <h4>Stress Detection in Social Network</h4>
-            <p><strong>Tech Stack:</strong> Java/J2EE (JSP, Servlet), MySQL</p>
-            <p>Uses text analysis to detect stress levels based on social network interactions.</p>
+            <p><strong>Tech Stack:</strong> Java/J2EE, MySQL</p>
+            <p>Analyzes social media text for stress detection using sentiment analysis.</p>
         </div>
     </div>
 </section>
 
 <section id="contact" class="section">
-<form id="form">
-  <div class="field">
-    <label for="from_name">from_name</label>
-    <input type="text" name="from_name" id="from_name">
-  </div>
-  <div class="field">
-    <label for="to_name">to_name</label>
-    <input type="text" name="to_name" id="to_name">
-  </div>
-  <div class="field">
-    <label for="message">message</label>
-    <input type="text" name="message" id="message">
-  </div>
-  <div class="field">
-    <label for="reply_to">reply_to</label>
-    <input type="text" name="reply_to" id="reply_to">
-  </div>
-
-  <input type="submit" id="button" value="Send Email" >
-</form>
+    <h3 class="section-title">Contact Me</h3>
+    <form id="form">
+        <div class="field">
+            <label for="from_name">Your Name</label>
+            <input type="text" name="from_name" id="from_name" required>
+        </div>
+        <div class="field">
+            <label for="reply_to">Your Email</label>
+            <input type="email" name="reply_to" id="reply_to" required>
+        </div>
+        <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" id="button" class="btn">Send Email</button>
+    </form>
 </section>
 
 <footer>
     <ul>
-        <li><span class="bi bi-envelope"></span> Keerthantaraka7707@gmail.com</li>
-        <li><span class="bi bi-phone"></span> 9491287707</li>
-        <li><span class="bi bi-linkedin"></span> <a href="https://www.linkedin.com/in/keerthan-taraka-4887851a8/">LinkedIn Profile</a></li>
+        <li><i class="bi bi-envelope"></i> Keerthantaraka7707@gmail.com</li>
+        <li><i class="bi bi-phone"></i> 9491287707</li>
+        <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/keerthan-taraka-4887851a8/">LinkedIn Profile</a></li>
     </ul>
 </footer>
 
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('EiSgeFwz0o01t4Ju4')
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
