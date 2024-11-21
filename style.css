@@ -60,11 +60,55 @@ nav .links {
     gap: 2rem;
 }
 
+/* Footer Styling */
 footer {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 2rem 10%;
     text-align: center;
-    padding: 2rem;
-    background: var(--secondary-bg);
 }
+
+footer .footer-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+}
+
+footer .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .footer-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+footer .footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: var(--highlight-color);
+}
+
+footer .footer-links i {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+}
+
 /* Contact Section */
 #contact {
     display: flex;
