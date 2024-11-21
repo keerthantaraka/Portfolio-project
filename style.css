@@ -65,3 +65,63 @@ footer {
     padding: 2rem;
     background: var(--secondary-bg);
 }
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    background-color: var(--primary-bg);
+}
+
+#contact form {
+    width: 100%;
+    max-width: 400px; /* Set a max width for the form */
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact .field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#contact .field label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+#contact .field input,
+#contact .field textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+#contact .btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: var(--highlight-color);
+    color: var(--primary-bg);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact .btn:hover {
+    background-color: #e76f51;
+}
