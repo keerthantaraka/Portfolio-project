@@ -1,34 +1,22 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-    });
-});
+  const formData = {
+    from_name: document.getElementById("from_name").value,
+    to_name: document.getElementById("to_name").value,
+    message: document.getElementById("message").value,
+    reply_to: document.getElementById("reply_to").value,
+  };
 
-// Highlight active navbar links on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
+  console.log(formData); // Check form data
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-
-        const navLink = document.querySelector(`nav a[href="#${sectionId}"]`);
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            navLink.classList.add('active');
-        } else {
-            navLink.classList.remove('active');
-        }
-    });
+  emailjs.sendForm("default_service", "template_yv4s95l", this).then(
+    () => {
+      alert("Email sent successfully!");
+    },
+    (err) => {
+      console.error("Failed to send email:", err); // Debug error
+      alert("Failed to send email. Please try again later.");
+    }
+  );
 });
