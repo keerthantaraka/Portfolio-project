@@ -84,24 +84,29 @@
     </div>
 </section>
 
-<section id="contact" class="section">
-    <h3 class="section-title">Contact Me</h3>
-    <form id="form">
-        <div class="field">
-            <label for="from_name">Your Name</label>
-            <input type="text" name="from_name" id="from_name" required>
-        </div>
-        <div class="field">
-            <label for="reply_to">Your Email</label>
-            <input type="email" name="reply_to" id="reply_to" required>
-        </div>
-        <div class="field">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" id="button" class="btn">Send Email</button>
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p>Have questions or want to collaborate? Drop me a message below.</p>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+      <p id="success-message" style="display: none; color: green; margin-top: 10px;">Message sent successfully!</p>
     </form>
+  </div>
 </section>
+
 
 <footer>
     <div class="footer-container">
