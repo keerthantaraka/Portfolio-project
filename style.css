@@ -12,25 +12,25 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #1e1e1e; /* Dark background */
-  color: #fff;
+  background-color: #121212; /* Deep dark background */
+  color: #e0e0e0; /* Light gray text for better contrast */
   position: fixed; /* Sticks to the top */
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
 }
 
 /* Logo Styling */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff; /* Bright logo color */
+  color: #ff8c00; /* Accent orange color */
   transition: color 0.3s ease-in-out;
 }
 
 .logo:hover {
-  color: #0056b3;
+  color: #ffa733; /* Slightly lighter orange on hover */
 }
 
 /* Links Styling */
@@ -40,21 +40,21 @@ ul.links {
 }
 
 ul.links li a {
-  color: #fff;
+  color: #e0e0e0; /* Light gray text */
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 ul.links li a:hover {
-  color: #007bff; /* Highlight color */
+  color: #ff8c00; /* Highlight orange color */
   font-weight: bold;
 }
 
 /* Button Styling */
 .btn {
   padding: 10px 15px;
-  color: #fff;
-  background-color: #007bff;
+  color: #121212; /* Dark text for contrast */
+  background-color: #ff8c00; /* Orange background */
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -63,7 +63,7 @@ ul.links li a:hover {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #ffa733; /* Lighter orange on hover */
   transform: scale(1.05); /* Subtle hover zoom */
 }
 
@@ -72,7 +72,7 @@ ul.links li a:hover {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 /* Responsive Design */
@@ -80,19 +80,19 @@ ul.links li a:hover {
   ul.links {
     display: none;
     flex-direction: column;
-    background-color: #1e1e1e;
+    background-color: #1c1c1c; /* Slightly lighter dark background */
     position: absolute;
     top: 60px;
     right: 20px;
     width: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
   }
 
   ul.links li {
     text-align: center;
     padding: 10px 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333; /* Dark border for separation */
   }
 
   ul.links li:last-child {
@@ -101,6 +101,11 @@ ul.links li a:hover {
 
   ul.links li a {
     font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+
+  ul.links li a:hover {
+    color: #ff8c00;
   }
 
   #menu {
@@ -111,7 +116,6 @@ ul.links li a:hover {
     display: flex !important;
   }
 }
-
 
 .section {
     padding: 4rem 10%;
