@@ -1,9 +1,17 @@
 /* General Reset */
-body, ul, li, a {
+body, html, ul, li, a {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
+  height: 100%; /* Ensure full height for body */
+}
+
+/* Apply Dark Background to Entire Page */
+body {
+  background-color: #121212; /* Dark background for entire page */
+  color: #e0e0e0; /* Light gray text for better contrast */
+  font-family: 'Arial', sans-serif;
 }
 
 /* Navigation Bar Styling */
@@ -12,8 +20,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #121212; /* Deep dark background */
-  color: #e0e0e0; /* Light gray text for better contrast */
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
   position: fixed; /* Sticks to the top */
   top: 0;
   width: 100%;
