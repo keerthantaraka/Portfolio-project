@@ -108,68 +108,72 @@ footer .footer-links i {
     font-size: 1.5rem;
     color: var(--highlight-color);
 }
-/* Section Styling */
+/* Contact Section Styling */
 #contact {
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e; /* Matches the dark theme */
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if there's enough space */
   text-align: center;
   flex-direction: column;
+  color: #fff; /* Text color for better contrast */
 }
 
 /* Contact Container Styling */
 .contact-container {
   max-width: 600px; /* Limits the container width */
-  background: #fff;
+  margin: 0 auto; /* Centers the container */
+  background: #2a2a2a; /* Slightly lighter background for contrast */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for elevation */
 }
 
 /* Header Styling */
 #contact h2 {
   font-size: 2rem;
-  color: #333;
-  margin-bottom: 10px;
+  color: #f5f5f5; /* Light font for better readability */
+  margin-bottom: 15px;
 }
 
 #contact p {
   font-size: 1.1rem;
-  color: #555;
+  color: #cfcfcf;
   margin-bottom: 20px;
 }
 
 /* Form Styling */
 .form-group {
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left; /* Align labels and inputs properly */
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #333;
+  color: #ddd;
 }
 
 input, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #444; /* Darker border for consistency */
   border-radius: 5px;
   font-size: 1rem;
+  background: #333; /* Darker input background */
+  color: #fff; /* White text for better visibility */
 }
 
 input:focus, textarea:focus {
-  border-color: #007bff;
+  border-color: #007bff; /* Highlight border on focus */
   outline: none;
+  background-color: #444;
 }
 
 textarea {
-  resize: none; /* Prevents resizing of the text area */
+  resize: none; /* Prevent resizing */
 }
 
 /* Button Styling */
@@ -188,7 +192,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Success Message Styling */
+/* Success Message */
 #success-message {
   font-size: 0.9rem;
   margin-top: 15px;
