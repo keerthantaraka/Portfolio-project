@@ -4,14 +4,15 @@ body, html, ul, li, a {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  height: 100%; /* Ensure full height for body */
+  box-sizing: border-box;
 }
 
 /* Apply Dark Background to Entire Page */
 body {
-  background-color: #121212; /* Dark background for entire page */
-  color: #e0e0e0; /* Light gray text for better contrast */
+  background-color: #121212; /* Dark theme */
+  color: #e0e0e0; /* Light text */
   font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
 
 /* Navigation Bar Styling */
@@ -21,48 +22,45 @@ nav {
   align-items: center;
   padding: 15px 20px;
   background-color: #1e1e1e; /* Dark background */
-  color: #e0e0e0; /* Light gray text */
-  position: fixed; /* Sticks to the top */
+  color: #e0e0e0;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Depth */
 }
 
-/* Logo Styling */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ff8c00; /* Accent orange color */
+  color: #ff8c00; /* Accent color */
   transition: color 0.3s ease-in-out;
 }
 
 .logo:hover {
-  color: #ffa733; /* Slightly lighter orange on hover */
+  color: #ffa733;
 }
 
-/* Links Styling */
 ul.links {
   display: flex;
   gap: 20px;
 }
 
 ul.links li a {
-  color: #e0e0e0; /* Light gray text */
+  color: #e0e0e0;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 ul.links li a:hover {
-  color: #ff8c00; /* Highlight orange color */
+  color: #ff8c00;
   font-weight: bold;
 }
 
-/* Button Styling */
 .btn {
   padding: 10px 15px;
-  color: #121212; /* Dark text for contrast */
-  background-color: #ff8c00; /* Orange background */
+  color: #121212;
+  background-color: #ff8c00;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -71,11 +69,10 @@ ul.links li a:hover {
 }
 
 .btn:hover {
-  background-color: #ffa733; /* Lighter orange on hover */
-  transform: scale(1.05); /* Subtle hover zoom */
+  background-color: #ffa733;
+  transform: scale(1.05);
 }
 
-/* Responsive Menu Icon */
 #menu {
   display: none;
   font-size: 1.8rem;
@@ -83,12 +80,12 @@ ul.links li a:hover {
   color: #e0e0e0;
 }
 
-/* Responsive Design */
+/* Responsive Navigation */
 @media (max-width: 768px) {
   ul.links {
     display: none;
     flex-direction: column;
-    background-color: #1c1c1c; /* Slightly lighter dark background */
+    background-color: #1c1c1c;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -100,20 +97,11 @@ ul.links li a:hover {
   ul.links li {
     text-align: center;
     padding: 10px 0;
-    border-bottom: 1px solid #333; /* Dark border for separation */
+    border-bottom: 1px solid #333;
   }
 
   ul.links li:last-child {
     border-bottom: none;
-  }
-
-  ul.links li a {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-  }
-
-  ul.links li a:hover {
-    color: #ff8c00;
   }
 
   #menu {
@@ -125,157 +113,156 @@ ul.links li a:hover {
   }
 }
 
-.section {
-    padding: 4rem 10%;
+/* Section Styling */
+section {
+  margin: 80px 0;
+  padding: 40px 20px;
 }
 
-.skills {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* Footer Styling */
-footer {
-    background-color: var(--secondary-bg);
-    color: var(--text-color);
-    padding: 2rem 10%;
-    text-align: center;
-}
-
-footer .footer-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-footer h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--highlight-color);
-}
-
-footer .footer-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-footer .footer-links li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-}
-
-footer .footer-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .footer-links a:hover {
-    color: var(--highlight-color);
-}
-
-footer .footer-links i {
-    font-size: 1.5rem;
-    color: var(--highlight-color);
-}
-/* Contact Section Styling */
-#contact {
-  padding: 50px 20px;
-  background-color: #1e1e1e; /* Matches the dark theme */
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically if there's enough space */
+/* Home Section */
+#home {
   text-align: center;
-  flex-direction: column;
-  color: #fff; /* Text color for better contrast */
+  padding: 100px 20px;
+  background: #1e1e1e;
+  color: #e0e0e0;
 }
 
-/* Contact Container Styling */
-.contact-container {
-  max-width: 600px; /* Limits the container width */
-  margin: 0 auto; /* Centers the container */
-  background: #2a2a2a; /* Slightly lighter background for contrast */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for elevation */
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff8c00;
 }
 
-/* Header Styling */
+#home p {
+  font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+  background: #1c1c1c;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #ff8c00;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.skills .technical, .skills .soft {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills h2 {
+  color: #ff8c00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills ul li {
+  background-color: #121212;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.skills ul li:hover {
+  transform: scale(1.05);
+  background-color: #ffa733;
+}
+
+/* Projects Section */
+#projects {
+  background: #1c1c1c;
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #ff8c00;
+  margin-bottom: 40px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #1e1e1e;
+  padding: 60px 20px;
+  text-align: center;
+}
+
 #contact h2 {
   font-size: 2rem;
-  color: #f5f5f5; /* Light font for better readability */
+  color: #ff8c00;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input, #contact form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
   margin-bottom: 15px;
-}
-
-#contact p {
-  font-size: 1.1rem;
-  color: #cfcfcf;
-  margin-bottom: 20px;
-}
-
-/* Form Styling */
-.form-group {
-  margin-bottom: 20px;
-  text-align: left; /* Align labels and inputs properly */
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #ddd;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #444; /* Darker border for consistency */
+  background: #121212;
+  color: #e0e0e0;
+  border: 1px solid #333;
   border-radius: 5px;
-  font-size: 1rem;
-  background: #333; /* Darker input background */
-  color: #fff; /* White text for better visibility */
 }
 
-input:focus, textarea:focus {
-  border-color: #007bff; /* Highlight border on focus */
-  outline: none;
-  background-color: #444;
+#contact form input::placeholder, #contact form textarea::placeholder {
+  color: #999;
 }
 
-textarea {
-  resize: none; /* Prevent resizing */
-}
-
-/* Button Styling */
-button {
-  padding: 12px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
+#contact form button {
+  padding: 10px 20px;
+  background: #ff8c00;
+  color: #121212;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #0056b3;
+#contact form button:hover {
+  background: #ffa733;
 }
 
-/* Success Message */
-#success-message {
-  font-size: 0.9rem;
-  margin-top: 15px;
-  color: green;
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+footer a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
