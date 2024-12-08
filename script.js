@@ -1,20 +1,10 @@
-const btn = document.getElementById("button");
-
-document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  btn.innerText = "Sending...";
-
-  const serviceID = "default_service";
-  const templateID = "template_yv4s95l";
-
-  emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.innerText = "Send Email";
-      alert("Message sent successfully!");
-    })
-    .catch((err) => {
-      btn.innerText = "Send Email";
-      alert("Failed to send message. Please try again.");
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.your-button-class'); // Update this with the actual class or ID of your button
+    if (button) {
+        button.addEventListener('click', () => {
+            console.log('Button clicked!');
+        });
+    } else {
+        console.error('Button element not found');
+    }
 });
